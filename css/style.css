@@ -1,3 +1,9 @@
+ * WEBSITE: https://themefisher.com
+ * TWITTER: https://twitter.com/themefisher
+ * FACEBOOK: https://www.facebook.com/themefisher
+ * GITHUB: https://github.com/themefisher/
+ */
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap);
 /* Typography
 ================================================== */
@@ -87,7 +93,7 @@ body {
 
 .preload {
   position: fixed;
-  background: #fff url(https://giphy.com/gifs/VDgjlZMXjYy0MHOkjw) center center no-repeat;
+  background: #fff url(../images/preload.gif) center center no-repeat;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -2101,7 +2107,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .testimonial-area {
   padding: 100px 0;
   background-color: #ee1516;
-  background-image: url(https://www.rocroofingfl.com/images/parallax2.jpg);
+  background-image: url(../images/parallax2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -3333,3 +3339,4 @@ label {
   font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
+
