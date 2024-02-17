@@ -1,295 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="author" content="Tom Ford A-CMMN">
-    <meta name="generator" content="H&A Quality Plastering WEBSITE v1.0">
-    <meta name="description" content="Construction Html5 Template">
-    <title>H&A Quality Plastering</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Tom Ford A-CMMN">
+  <meta name="generator" content="Expeditious Auto Repair WEBSITE v1.0">
+  <meta name="description" content="Auto Repair Website Html5 Template">
+  <title>Expeditious Auto Repair</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <style>
+    .social-icon {
+      display: inline-block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      padding: 10px;
+      background-color: #fff; /* Background color */
+    }
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="plugins/animate-css/animate.css">
-    <link rel="stylesheet" href="plugins/slick/slick.css">
-    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-    <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
-    <link rel="stylesheet" href="css/style.css">
+    .social-icon i {
+      transition: transform 0.3s ease;
+    }
 
-    <!-- Chatra Script -->
-    <script>
-        (function (d, w, c) {
-            w.ChatraID = '8EhuA9MRu5xFxGSpe';
-            var s = d.createElement('script');
-            w[c] = w[c] || function () {
-                (w[c].q = w[c].q || []).push(arguments);
-            };
-            s.async = true;
-            s.src = 'https://call.chatra.io/chatra.js';
-            if (d.head) d.head.appendChild(s);
-        })(document, window, 'Chatra');
+    .social-icon:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
 
-        // Set Chatra Integration Data
-        Chatra('setIntegrationData', {
-            name: 'Build Bot',
-            email: 'qualityplastering08@gmail.com',
-            phone: '323-476-8319',
-            notes: 'Helping you build, every step of the way. Please feel free to contact us directly for immediate assistance.'
-        });
+    .social-icon:hover i,
+    .ts-service-icon i:hover {
+      animation: spin 1s infinite linear;
+    }
 
-        // Customize Chatra Widget
-        window.ChatraSetup = {
-            buttonStyle: 'round',
-            buttonSize: 75,
-            colors: {
-                buttonText: '#f600a5',
-                buttonBg: '#fff'
-            },
-            startHidden: true,
-            chatHeight: 400,
-            zIndex: 10
-        };
-    </script>
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="body-inner">
-        <div id="top-bar" class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8">
-                        <ul class="top-info text-center text-md-left">
-                            <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">LOS ANGELES, CALIFORNIA, UNITED STATES</p></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a title="Facebook" href="https://www.facebook.com/haqualityplastering" target="_blank">
-                                    <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
-                                </a>
-                            </li>
-                            <li><a title="Yelp" href="https://www.yelp.com/biz/garcias-construction-los-angeles" target="_blank"><span class="social-icon"><i class="fab fa-yelp"></i></span></a></li>
-                            <li><a title="Email" href="mailto:contractor@haqualityplastering.com"><span class="social-icon"><i class="fas fa-envelope"></i></span></a></li>
-                            <li><a title="Phone" href="tel:+13234768319"><span class="social-icon"><i class="fas fa-phone"></i></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+ <div class="body-inner">
+
+  <div id="top-bar" class="top-bar">
+
+   <div class="container">
+
+    <div class="row">
+
+     <div class="col-lg-8 col-md-8">
+
+      <ul class="top-info text-center text-md-left">
+
+       <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">4534 Baldwin Avenue
+        El Monte, CA 91731
+        USA</p></li>
+
+      </ul>
+
+     </div>
+
+     <div class="col-lg-4 col-md-4 top-social text-center text-md-right" data-aos="fade-down" data-aos-duration="5000">
+
+  <ul class="list-unstyled">
+
+    <li data-aos="fade-right" data-aos-delay="400" data-aos-duration="1200">
+
+      <a title="Facebook" href="https://www.facebook.com/haqualityplastering" target="_blank">
+
+        <span class="social-icon">
+
+          <i class="fab fa-facebook-f" style="color: #4267B2;"></i>
+
+        </span>
+
+      </a>
+
+    </li>
+
+    <li data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">
+
+      <a title="Yelp" href="https://www.yelp.com/biz/garcias-construction-los-angeles" target="_blank">
+
+        <span class="social-icon">
+
+          <i class="fab fa-yelp" style="color: #D32323;"></i>
+
+        </span>
+
+      </a>
+
+    </li>
+
+    <li data-aos="fade-right" data-aos-delay="600" data-aos-duration="1200">
+
+      <a title="WhatsApp" href="https://wa.me/13234768319" target="_blank">
+
+        <span class="social-icon">
+
+          <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+
+        </span>
+
+      </a>
+
+    </li>
+
+    <li data-aos="fade-right" data-aos-delay="700" data-aos-duration="1200">
+
+      <a title="Phone" href="tel:+13234768319">
+
+        <span class="social-icon">
+
+          <i class="fas fa-phone" style="color: #007BFF;"></i>
+
+        </span>
+
+      </a>
+
+    </li>
+
+  </ul>
+
+</div>
+
+      </div>
     </div>
-<header class="header-one" id="header">
-<div class="bg-white">
-<div class="container">
-<div class="logo-area">
-<div class="row align-items-center">
-<div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0"><a class="d-block" href="index.html"><img alt="Constra" loading="lazy" src="images/logo.png" /> </a></div>
+  </div>
+  <header class="header-one" id="header">
+    <div class="bg-white">
+      <div class="container">
+        <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0"><a class="d-block" href="index.html"><img alt="Company Logo" loading="lazy" src="https://i.ibb.co/VgjTt7t/logo1.png" /> </a></div>
 
-<div class="col-lg-9 header-right">
-<ul class="top-info-box">
-	<li>
-	<div class="info-box">
-	<div class="info-box-content">
-	<p class="info-box-title">Call Now</p>
+             <div class="col-lg-9 header-right">
 
-	<p class="info-box-subtitle">323-476-8319</p>
-	</div>
-	</div>
-	</li>
-	<li>
-	<div class="info-box">
-	<div class="info-box-content">
-	<p class="info-box-title">Licensed &amp; Insured</p>
+  <ul class="top-info-box">
 
-	<p class="info-box-subtitle">Lic #1111767</p>
-	</div>
-	</div>
-	</li>
-	<li class="last">
-	<div class="info-box last">
-	<div class="info-box-content">
-	<p class="info-box-title">We Offer Free Estimates</p>
+    <li data-aos="fade-left" data-aos-delay="600" data-aos-duration="1200">
 
-	<p class="info-box-subtitle">Request your quote!</p>
-	</div>
-	</div>
-	</li>
-	<li class="header-get-a-quote"><a class="btn btn-primary" href="contact.html">Get A Quote</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+      <div class="info-box">
+
+        <div class="info-box-content">
+
+          <p class="info-box-title">Call Now</p>
+
+          <p class="info-box-subtitle">(626) 758-1168</p>
+
+        </div>
+
+      </div>
+
+    </li>
+
+    <li data-aos="fade-left" data-aos-delay="800" data-aos-duration="1200">
+
+      <div class="info-box">
+
+        <div class="info-box-content">
+
+          <p class="info-box-title">Professional Auto Care</p>
+
+          <p class="info-box-subtitle">Request a Consultation</p>
+
+        </div>
+
+      </div>
+
+    </li>
+
+    <li data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1200" class="last">
+
+      <div class="info-box last">
+
+        <div class="info-box-content">
+
+          <p class="info-box-title">General Auto Diagnosis</p>
+
+          <p class="info-box-subtitle">Contact Our Garage</p>
+
+        </div>
+
+      </div>
+
+    </li>
+
+    <li data-aos="fade-left" data-aos-delay="1200" data-aos-duration="1200" class="header-get-a-quote">
+
+      <a class="btn btn-primary" href="contact.html">Get A Quote</a>
+
+    </li>
+
+  </ul>
+
 </div>
 
-<div class="site-navigation">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<nav class="navbar navbar-expand-lg navbar-dark p-0"><button aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target=".navbar-collapse" data-toggle="collapse" type="button"></button>
-
-<div class="collapse navbar-collapse" id="navbar-collapse">
-<ul class="nav navbar-nav mr-auto">
-	<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-	<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-	<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-	<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-</nav>
-</div>
 </div>
 
-<div class="nav-search"></div>
+</div>
 
-<div class="search-block" style="display: none;"><label class="w-100 mb-0" for="search-field"><input class="form-control" id="search-field" placeholder="Type what you want and enter" type="text" /> </label> <span class="search-close">&times;</span></div>
 </div>
-</div>
+
+      <div class="site-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0"><button aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target=".navbar-collapse" data-toggle="collapse" type="button"></button>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                  <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">privacy</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <div class="nav-search"></div>
+
+          <div class="search-block" style="display: none;"><label class="w-100 mb-0" for="search-field"><input class="form-control" id="search-field" placeholder="Type what you want and enter" type="text" /> </label> <span class="search-close">&times;</span></div>
+        </div>
+      </div>
+    </div>
+ 
 </header>
 
+<style>
+    .search-toggle {
+        cursor: pointer;
+        border: none;
+        background: none;
+        padding: 0;
+        margin-left: 15px;
+        font-size: 1.25rem;
+        color: #007bff;
+    }
+
+    .search-toggle:focus {
+        outline: none;
+    }
+
+    .search-expand {
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        padding: 5px 10px;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .search-expand input[type="text"] {
+        border: none;
+        width: 250px;
+    }
+
+    .search-expand input[type="text"]:focus {
+        outline: none;
+    }
+
+    .search-close {
+        cursor: pointer;
+        color: #333;
+        margin-left: 5px;
+    }
+
+    .search-close:hover {
+        color: #000;
+    }
+
+    /* Additional styles for info-box hover effects */
+    .info-box:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchToggle = document.querySelector('.search-toggle');
+        const searchExpand = document.querySelector('.search-expand');
+        const searchClose = document.querySelector('.search-close');
+
+        searchToggle.addEventListener('click', function() {
+            searchExpand.style.display = 'block';
+            setTimeout(function() {
+                searchExpand.style.width = '250px';
+            }, 10); // Timeout to allow display change to register
+        });
+
+        searchClose.addEventListener('click', function() {
+            searchExpand.style.width = '0';
+            setTimeout(function() {
+                searchExpand.style.display = 'none';
+            }, 500); // Match the timeout to the CSS transition
+        });
+    });
+</script>
 <div class="banner-carousel banner-carousel-1 mb-0">
-<div class="banner-carousel-item" style="background-image:url(images/slider-main/bg1.jpg)">
+<div class="banner-carousel-item" style="background-image:url(https://i.ibb.co/Z6HZ0C5/bg1.jpg)">
 <div class="slider-content">
 <div class="container h-100">
 <div class="row align-items-center h-100">
 <div class="col-md-12 text-center">
-<h2 class="slide-title" data-animation-in="slideInLeft"></h2>
-
-<h3 class="slide-sub-title" data-animation-in="slideInRight">H&amp;A Quality Plastering, Stucco Experts <a class="slider btn btn-primary" href="projects-single.html">Projects</a> <a class="slider btn btn-primary border" href="contact.html">Contact Now</a></h3>
-
-<p>SI HABLAMOS ESPANOL!</p>
+<h2 class="slide-title" data-animation-in="slideInLeft"> </h2>
+<h3 class="slide-sub-title" data-animation-in="slideInRight">Certified and Experienced</h3>
+<p data-animation-in="slideInLeft" data-duration-in="1.2">
+<a href="projects-single.html" class="slider btn btn-primary">Get Expert Advice</a>
+<a href="contact.html" class="slider btn btn-primary border">Drive In Today</a>
+</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-
-<div class="banner-carousel-item" style="background-image:url(images/slider-main/bg2.jpg)">
+<div class="banner-carousel-item" style="background-image:url(https://i.ibb.co/1sz13Gn/bg2.jpg)">
 <div class="slider-content text-left">
 <div class="container h-100">
 <div class="row align-items-center h-100">
 <div class="col-md-12">
-<h2 class="slide-title-box" data-animation-in="slideInDown">Premium Plastering</h2>
-
-<h3 class="slide-title" data-animation-in="fadeIn">Foam Molding</h3>
-
-<h3 class="slide-sub-title" data-animation-in="slideInLeft">Re-stucco Services</h3>
+<h2 class="slide-title-box" data-animation-in="slideInDown">Professional Auto Care</h2>
+<h3 class="slide-title" data-animation-in="fadeIn">When Service Matters</h3>
+<h3 class="slide-sub-title" data-animation-in="slideInLeft">Your Choice is Simple</h3>
 </div>
 </div>
 </div>
 </div>
 </div>
-
-<div class="banner-carousel-item" style="background-image:url(images/slider-main/bg3.jpg)">
+<div class="banner-carousel-item" style="background-image:url(https://i.ibb.co/74p4tND/b3.jpg)">
 <div class="slider-content text-right">
 <div class="container h-100">
 <div class="row align-items-center h-100">
 <div class="col-md-12">
-<h3 class="slide-sub-title" data-animation-in="fadeIn">Acrilico Solutions</h3>
-
-<p class="slider-description lead" data-animation-in="slideInRight">Covering all of Los Angeles Stucco needs.</p>
-
-<div data-animation-in="slideInLeft"><a aria-label="contact-with-us" class="slider btn btn-primary" href="contact.html">Get Free Quote</a> <a aria-label="learn-more-about-us" class="slider btn btn-primary border" href="about.html">Learn more</a></div>
+<h3 class="slide-sub-title" data-animation-in="fadeIn">Rated 4.5 Stars on Yelp</h3>
+<p class="slider-description lead" data-animation-in="slideInRight">Your Trusted LA Auto Experts</p>
+<div data-animation-in="slideInLeft">
+<a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">Ask a Mechanic</a>
+<a href="about.html" class="slider btn btn-primary border" aria-label="learn-more-about-us">Talk to a Tech</a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-
+</div>
 <section class="call-to-action-box no-padding">
 <div class="container">
 <div class="action-style-box">
 <div class="row align-items-center">
 <div class="col-md-8 text-center text-md-left">
 <div class="call-to-action-text">
-<h3 class="action-title">We&#39;ve got you covered Los Angeles</h3>
+<h3 class="action-title">Come In, Meet Our Team</h3>
 </div>
 </div>
-
 <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
-<div class="call-to-action-btn"><a class="btn btn-dark" href="contact.html">Request Quote</a></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="ts-features" id="ts-features">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="ts-intro">
-<h2 class="into-title"></h2>
-
-<h3 class="into-sub-title">WE DELIVER LANDMARK PROJECTS</h3>
-
-<p></p>
-</div>
-
-<div class="gap-20"></div>
-
-<div class="row">
-<div class="col-md-6">
-<div class="ts-service-box">
-<div class="ts-service-box-content">
-<h3 class="service-box-title">Reputation for Excellence</h3>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="ts-service-box">
-<div class="ts-service-box-content">
-<h3 class="service-box-title">We Build Partnerships</h3>
-</div>
-</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-6">
-<div class="ts-service-box">
-<div class="ts-service-box-content">
-<h3 class="service-box-title">Guided by Commitment</h3>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="ts-service-box">
-<div class="ts-service-box-content">
-<h3 class="service-box-title">A Team of Professionals</h3>
-</div>
-</div>
+<div class="call-to-action-btn">
+<a class="btn btn-dark" href="contact.html">Route Here</a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-</div>
+<!-- Services Section -->
+<section id="ts-features" class="ts-features" style="background-color: #EFEFEF; padding: 60px 0;">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="ts-intro">
+          <h2 class="into-title" style="margin-bottom: 30px;">Beyond Repairs: Engineering Excellence</h2>
+          <h3 class="into-sub-title">Service Driven by Integrity</h3>
+        </div>
+        <div class="gap-20"></div>
+        <div class="row">
+          <!-- Reputation for Excellence -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-trophy" style="color: #ee1516;"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">Unmatched Auto Integrity</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Guided by Commitment -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-thumbs-up" style="color: #ee1516;"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">Expertise in Every Repair</h3>
+              </div>
+            </div>
+          </div>
+          <!-- We Build Partnerships -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-handshake" style="color: #ee1516;"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">Dedication Drives Partnerships</h3>
+              </div>
+            </div>
+          </div>
+          <!-- A Team of Professionals -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fas fa-users" style="color: #ee1516;"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">A Team of Professionals</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<footer class="footer bg-overlay" id="footer">
-<div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"></div>
-<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=awCFtMeDx8KBKPITIhiBI6O0fEBlNSKNrjVjM7i24ao3DvM5cSd67Sc74odp"></script></span>
+<section id="contact-form" style="background-color: #FFFFFF !important; padding: 40px 0;">
+    <div class="container">
+        <h2 class="section-title text-center" style="margin-bottom: 20px;">Contact form</h2>
+        <div style="max-width: 900px; margin: auto; height: 500px;">
+            <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+            <zapier-interfaces-page-embed page-id='clscm9s38000dzwofgge6ciuk' no-background='false' allow-query-params='true' query-params='' style='width: 100%; height: 100%;'></zapier-interfaces-page-embed>
+        </div>
+    </div>
+</section>
 
-<div class="copyright">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-md-6">
-<div class="copyright-info"><span>&copy; <script type="5279427911ab2a86ab11b5b5-text/javascript">
-    document.write(new Date().getFullYear());
-  </script> H&amp;A Quality Plastering, Los Angeles, California, United States. All Rights Reserved.</span></div>
-</div>
-
-<div class="back-to-top position-fixed" data-offset-top="10" data-spy="affix" id="back-to-top"><button class="btn btn-primary" title="Back to Top"></button></div>
-</div>
-</div>
-</div>
+<footer id="footer" class="footer" style="background-color: red !important; color: white !important; padding: 30px 0 !important;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="copyright-info">
+                    <span>&copy; <script>document.write(new Date().getFullYear());</script>, Expeditious Auto Repair, 4534 Baldwin Avenue
+El Monte, CA 91731
+USA</span>
+                </div>
+            </div>
+            <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed" style="right: 15px; bottom: 15px;">
+                <button class="btn btn-primary" title="Back to Top" style="background-color: #222 !important; border-color: #222 !important;">
+                    <i class="fa fa-angle-double-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 </footer>
-<script src="plugins/jQuery/jquery.min.js" type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="plugins/bootstrap/bootstrap.min.js" defer type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="plugins/slick/slick.min.js" type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="plugins/slick/slick-animation.min.js" type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="plugins/colorbox/jquery.colorbox.js" type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="plugins/shuffle/shuffle.min.js" defer type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="plugins/google-map/map.js" defer type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="js/script.js" type="5279427911ab2a86ab11b5b5-text/javascript"></script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="5279427911ab2a86ab11b5b5-|49" defer></script></body>
+
+<script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/slick/slick-animation.min.js"></script>
+  <script src="plugins/colorbox/jquery.colorbox.js"></script>
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1000,
+      once: false, // Trigger animations on every scroll
+      mirror: false, // Disabling mirror will not animate elements out when scrolling past them
+    });
+  </script>
+
+</body>
+
 </html>
