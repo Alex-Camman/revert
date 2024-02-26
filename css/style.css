@@ -3324,6 +3324,32 @@ label {
   border: 1px solid transparent;
 }
 
+.sketchfab-container {
+    display: flex;           
+    align-items: center;    
+    justify-content: center; 
+    width: 100%;   
+    max-width: 1080px;     /* Maximum width of the container */
+    height: 640px;         /* Fixed height of the container */
+    margin: 0 auto;         /* Centers the container horizontally */
+    padding: 20px;          /* Adds padding around the 3D model */
+}
+
+.sketchfab-embed-wrapper {
+    position: relative;    
+    overflow: hidden;
+    width: 100%; 
+    padding-top: 60%;   /* Maintains a 1080 / 640 = 1.6875 aspect ratio  */
+}
+
+.sketchfab-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+}
+
 /* Error page
 ================================================== */
 .error-page .error-code h2 {
